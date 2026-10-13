@@ -1,0 +1,366 @@
+                question
+----------------------------------------
+ Q1. Top 5 anime in each genre by score
+(1 row)
+
+
+  genre_name   | rn |                            name                             | score | members
+---------------+----+-------------------------------------------------------------+-------+---------
+ Action        |  1 | Fullmetal Alchemist: Brotherhood                            |  9.19 | 2248456
+ Action        |  2 | Shingeki no Kyojin: The Final Season                        |  9.17 |  733260
+ Action        |  3 | Hunter x Hunter (2011)                                      |  9.10 | 1673924
+ Action        |  4 | Shingeki no Kyojin Season 3 Part 2                          |  9.10 | 1073626
+ Action        |  5 | Gintama░                                                    |  9.10 |  404121
+ Mystery       |  1 | Shingeki no Kyojin: The Final Season                        |  9.17 |  733260
+ Mystery       |  2 | Shingeki no Kyojin Season 3 Part 2                          |  9.10 | 1073626
+ Mystery       |  3 | Owarimonogatari 2nd Season                                  |  8.93 |  270878
+ Mystery       |  4 | Kizumonogatari III: Reiketsu-hen                            |  8.82 |  312062
+ Mystery       |  5 | Monogatari Series: Second Season                            |  8.78 |  509401
+ Romance       |  1 | Kimi no Na wa.                                              |  8.96 | 1726660
+ Romance       |  2 | Clannad: After Story                                        |  8.96 |  915885
+ Romance       |  3 | Monogatari Series: Second Season                            |  8.78 |  509401
+ Romance       |  4 | Shigatsu wa Kimi no Uso                                     |  8.74 | 1442330
+ Romance       |  5 | Kaguya-sama wa Kokurasetai?: Tensai-tachi no Renai Zunousen |  8.74 |  654744
+ Slice of Life |  1 | 3-gatsu no Lion 2nd Season                                  |  9.00 |  266243
+ Slice of Life |  2 | Clannad: After Story                                        |  8.96 |  915885
+ Slice of Life |  3 | Mob Psycho 100 II                                           |  8.84 |  835688
+ Slice of Life |  4 | Mushishi Zoku Shou 2nd Season                               |  8.76 |  198954
+ Slice of Life |  5 | Mushishi Zoku Shou                                          |  8.72 |  226522
+ Sports        |  1 | Haikyuu!!: Karasuno Koukou vs. Shiratorizawa Gakuen Koukou  |  8.87 |  727240
+ Sports        |  2 | Hajime no Ippo                                              |  8.75 |  383603
+ Sports        |  3 | Haikyuu!! Second Season                                     |  8.73 |  874150
+ Sports        |  4 | Hajime no Ippo: New Challenger                              |  8.67 |  201421
+ Sports        |  5 | Ashita no Joe 2                                             |  8.67 |   30192
+(25 rows)
+
+
+                 question
+-------------------------------------------
+ Q2. Which genres do people drop the most?
+(1 row)
+
+
+  genre_name   | titles | completed | dropped | drop_rate_pct
+---------------+--------+-----------+---------+---------------
+ Shoujo Ai     |     67 |   2600956 |  240128 |          8.45
+ Josei         |     66 |   3023366 |  230143 |          7.07
+ Martial Arts  |    154 |  11505425 |  818279 |          6.64
+ Samurai       |     80 |   4838872 |  294427 |          5.74
+ Music         |    204 |   8378724 |  506575 |          5.70
+ Shoujo        |    265 |  17204015 | 1009117 |          5.54
+ Historical    |    272 |  16323500 |  947844 |          5.49
+ Seinen        |    447 |  36215009 | 2095898 |          5.47
+ Space         |    155 |   5277696 |  295972 |          5.31
+ Ecchi         |    511 |  44580098 | 2441472 |          5.19
+ Demons        |    218 |  19344529 | 1056734 |          5.18
+ Magic         |    492 |  41752293 | 2268570 |          5.15
+ Sci-Fi        |    964 |  63257157 | 3402691 |          5.10
+ Slice of Life |    743 |  54761758 | 2915076 |          5.05
+ Fantasy       |   1218 | 109401400 | 5805996 |          5.04
+ Action        |   1794 | 175787021 | 9259822 |          5.00
+ Comedy        |   2298 | 181392766 | 9441476 |          4.95
+ Police        |    119 |   7250809 |  377502 |          4.95
+ Harem         |    314 |  33443544 | 1738830 |          4.94
+ Vampire       |    101 |  10992616 |  567723 |          4.91
+ Mecha         |    355 |  19451328 |  999238 |          4.89
+ Adventure     |    985 |  86191004 | 4392625 |          4.85
+ Horror        |    192 |  21351732 | 1074789 |          4.79
+ Super Power   |    346 |  45944540 | 2279823 |          4.73
+ Shounen Ai    |     58 |   2242856 |  110988 |          4.72
+ Game          |    140 |  17678901 |  873241 |          4.71
+ Romance       |   1142 | 111493046 | 5503316 |          4.70
+ Sports        |    255 |  14404542 |  708855 |          4.69
+ School        |    989 | 105891643 | 5164290 |          4.65
+ Mystery       |    429 |  50502733 | 2452528 |          4.63
+ Shounen       |   1109 | 113266997 | 5502607 |          4.63
+ Hentai        |    138 |   1766146 |   84997 |          4.59
+ Parody        |    173 |  13422317 |  619106 |          4.41
+ Dementia      |     41 |   4182783 |  192951 |          4.41
+ Kids          |     89 |   3894030 |  178198 |          4.38
+ Supernatural  |    874 | 107079278 | 4897684 |          4.37
+ Psychological |    236 |  34790153 | 1528678 |          4.21
+ Drama         |   1187 | 111156329 | 4810006 |          4.15
+ Thriller      |     86 |  16590339 |  640473 |          3.72
+ Military      |    287 |  23773339 |  905215 |          3.67
+(40 rows)
+
+
+                      question
+----------------------------------------------------
+ Q3. How many genres make up 80% of all engagement?
+(1 row)
+
+
+  genre_name   |  members  | share_pct | cumulative_pct
+---------------+-----------+-----------+----------------
+ Comedy        | 284687458 |     10.33 |          10.33
+ Action        | 272659189 |      9.90 |          20.23
+ Drama         | 175776823 |      6.38 |          26.61
+ Shounen       | 173209859 |      6.29 |          32.90
+ Fantasy       | 171849449 |      6.24 |          39.14
+ Romance       | 170043987 |      6.17 |          45.31
+ Supernatural  | 162117479 |      5.88 |          51.20
+ School        | 160682912 |      5.83 |          57.03
+ Adventure     | 133656801 |      4.85 |          61.88
+ Sci-Fi        | 106674964 |      3.87 |          65.75
+ Slice of Life |  92835310 |      3.37 |          69.12
+ Mystery       |  80824199 |      2.93 |          72.06
+ Super Power   |  68390583 |      2.48 |          74.54
+ Magic         |  65750822 |      2.39 |          76.93
+ Ecchi         |  65534861 |      2.38 |          79.31
+ Seinen        |  59568145 |      2.16 |          81.47
+ Psychological |  55066292 |      2.00 |          83.47
+ Harem         |  48307369 |      1.75 |          85.22
+ Military      |  36399910 |      1.32 |          86.54
+ Horror        |  32772598 |      1.19 |          87.73
+ Mecha         |  32217280 |      1.17 |          88.90
+ Demons        |  31619090 |      1.15 |          90.05
+ Historical    |  30655721 |      1.11 |          91.16
+ Shoujo        |  28117125 |      1.02 |          92.18
+ Thriller      |  26059268 |      0.95 |          93.13
+ Game          |  25750104 |      0.93 |          94.06
+ Sports        |  22878445 |      0.83 |          94.89
+ Parody        |  21518253 |      0.78 |          95.67
+ Martial Arts  |  17878532 |      0.65 |          96.32
+ Vampire       |  16953908 |      0.62 |          96.94
+ Music         |  15825700 |      0.57 |          97.51
+ Police        |  11970579 |      0.43 |          97.95
+ Space         |  10041597 |      0.36 |          98.31
+ Samurai       |   9095305 |      0.33 |          98.64
+ Dementia      |   7225785 |      0.26 |          98.91
+ Hentai        |   7158132 |      0.26 |          99.17
+ Kids          |   6353946 |      0.23 |          99.40
+ Josei         |   5572154 |      0.20 |          99.60
+ Shoujo Ai     |   4766736 |      0.17 |          99.77
+ Shounen Ai    |   3535120 |      0.13 |          99.90
+ Cars          |   1509356 |      0.05 |          99.95
+ Yaoi          |   1014900 |      0.04 |          99.99
+ Yuri          |    246248 |      0.01 |         100.00
+(43 rows)
+
+
+                     question
+--------------------------------------------------
+ Q4. Are the big studios getting better or worse?
+(1 row)
+
+
+  studio_name   |  yr  | titles | avg_score | moving_avg_3yr | change_vs_prev_yr
+----------------+------+--------+-----------+----------------+-------------------
+ J.C.Staff      | 2010 |      8 |      7.63 |           7.63 |
+ J.C.Staff      | 2011 |      7 |      7.30 |           7.47 |             -0.33
+ J.C.Staff      | 2012 |     10 |      7.51 |           7.48 |              0.21
+ J.C.Staff      | 2013 |      5 |      7.42 |           7.41 |             -0.09
+ J.C.Staff      | 2014 |      6 |      6.94 |           7.29 |             -0.48
+ J.C.Staff      | 2015 |      6 |      7.45 |           7.27 |              0.51
+ J.C.Staff      | 2016 |      6 |      7.33 |           7.24 |             -0.12
+ J.C.Staff      | 2017 |     11 |      6.78 |           7.19 |             -0.55
+ J.C.Staff      | 2018 |     11 |      7.18 |           7.10 |              0.40
+ J.C.Staff      | 2019 |      9 |      7.15 |           7.04 |             -0.03
+ J.C.Staff      | 2020 |      4 |      7.40 |           7.24 |              0.25
+ J.C.Staff      | 2021 |      2 |      5.87 |           6.81 |             -1.53
+ Madhouse       | 2010 |      4 |      7.60 |           7.60 |
+ Madhouse       | 2011 |      6 |      7.38 |           7.49 |             -0.22
+ Madhouse       | 2012 |      2 |      7.43 |           7.47 |              0.05
+ Madhouse       | 2013 |      5 |      7.74 |           7.52 |              0.31
+ Madhouse       | 2014 |      5 |      7.50 |           7.56 |             -0.24
+ Madhouse       | 2015 |      5 |      8.20 |           7.81 |              0.70
+ Madhouse       | 2016 |      3 |      7.24 |           7.65 |             -0.96
+ Madhouse       | 2017 |      2 |      6.66 |           7.37 |             -0.58
+ Madhouse       | 2018 |      7 |      7.40 |           7.10 |              0.74
+ Madhouse       | 2019 |      5 |      7.24 |           7.10 |             -0.16
+ Madhouse       | 2020 |      1 |      7.05 |           7.23 |             -0.19
+ Sunrise        | 2010 |      2 |      6.71 |           6.71 |
+ Sunrise        | 2011 |      7 |      7.23 |           6.97 |              0.52
+ Sunrise        | 2012 |      9 |      7.58 |           7.17 |              0.35
+ Sunrise        | 2013 |      7 |      7.18 |           7.33 |             -0.40
+ Sunrise        | 2014 |      8 |      6.92 |           7.23 |             -0.26
+ Sunrise        | 2015 |      1 |      8.02 |           7.37 |              1.10
+ Sunrise        | 2016 |      5 |      7.34 |           7.43 |             -0.68
+ Sunrise        | 2017 |      2 |      7.04 |           7.47 |             -0.30
+ Sunrise        | 2018 |      2 |      6.59 |           6.99 |             -0.45
+ Sunrise        | 2019 |      1 |      8.09 |           7.24 |              1.50
+ Sunrise        | 2020 |      3 |      7.28 |           7.32 |             -0.81
+ Toei Animation | 2010 |      4 |      6.72 |           6.72 |
+ Toei Animation | 2011 |      5 |      6.98 |           6.85 |              0.26
+ Toei Animation | 2012 |      3 |      6.50 |           6.73 |             -0.48
+ Toei Animation | 2013 |      3 |      6.80 |           6.76 |              0.30
+ Toei Animation | 2014 |      7 |      6.89 |           6.73 |              0.09
+ Toei Animation | 2015 |      3 |      7.60 |           7.10 |              0.71
+ Toei Animation | 2016 |      4 |      7.10 |           7.20 |             -0.50
+ Toei Animation | 2017 |      2 |      6.87 |           7.19 |             -0.23
+ Toei Animation | 2018 |      2 |      7.48 |           7.15 |              0.61
+ Toei Animation | 2019 |      1 |      7.25 |           7.20 |             -0.23
+ Toei Animation | 2020 |      4 |      6.66 |           7.13 |             -0.59
+ Toei Animation | 2021 |      1 |      8.09 |           7.33 |              1.43
+(46 rows)
+
+
+                    question
+------------------------------------------------
+ Q5. Does MAL's score actually match the votes?
+(1 row)
+
+
+psql:sql/03_analysis.sql:128: ERROR:  character with byte sequence 0xe2 0x98 0x86 in encoding "UTF8" has no equivalent in encoding "WIN1252"
+                            question
+----------------------------------------------------------------
+ Q6. Highly rated / heavily voted genres that people still drop
+(1 row)
+
+
+  genre_name   | titles | avg_score |  members  | drop_rate_pct | score_rank | votes_rank | drop_rank |        verdict  
+---------------+--------+-----------+-----------+---------------+------------+------------+-----------+------------------------
+ Shoujo Ai     |     67 |      6.93 |   4701589 |          8.45 |         35 |         38 |         1 | just dropped
+ Josei         |     66 |      7.25 |   5469035 |          7.07 |         20 |         36 |         2 | rated well but dropped
+ Martial Arts  |    153 |      7.08 |  17237187 |          6.64 |         32 |         29 |         3 | just dropped
+ Samurai       |     80 |      7.54 |   8811888 |          5.74 |          2 |         34 |         4 | rated well but dropped
+ Music         |    200 |      7.26 |  13895433 |          5.70 |         19 |         31 |         5 | rated well but dropped
+ Shoujo        |    261 |      7.31 |  26779508 |          5.54 |         14 |         24 |         6 | rated well but dropped
+ Historical    |    267 |      7.51 |  29050954 |          5.49 |          3 |         23 |         7 | rated well but dropped
+ Seinen        |    440 |      7.31 |  58134755 |          5.47 |         14 |         16 |         8 | rated well but dropped
+ Space         |    154 |      7.41 |   9143229 |          5.31 |          5 |         33 |         9 | rated well but dropped
+ Ecchi         |    507 |      6.71 |  64367531 |          5.19 |         40 |         14 |        10 | popular but dropped
+ Demons        |    209 |      7.34 |  30608362 |          5.18 |         12 |         21 |        11 | rated well but dropped
+ Magic         |    478 |      7.15 |  63731623 |          5.15 |         28 |         15 |        12 | popular but dropped
+ Sci-Fi        |    947 |      7.16 | 101746524 |          5.10 |         26 |         10 |        13 | popular but dropped
+ Slice of Life |    723 |      7.32 |  89912029 |          5.05 |         13 |         11 |        14 | rated well but dropped
+ Fantasy       |   1184 |      7.12 | 166099172 |          5.04 |         29 |          6 |        15 | popular but dropped
+ Action        |   1754 |      7.20 | 265364313 |          5.00 |         22 |          2 |        16 | popular but dropped
+ Police        |    117 |      7.41 |  11480364 |          4.95 |          5 |         32 |        17 | rated well but dropped
+ Comedy        |   2257 |      7.19 | 274734622 |          4.95 |         23 |          1 |        17 | popular but dropped
+ Harem         |    308 |      6.88 |  47603058 |          4.94 |         38 |         18 |        19 | popular but dropped
+ Vampire       |    100 |      7.10 |  16838050 |          4.91 |         30 |         30 |        20 | just dropped
+ Mecha         |    351 |      7.16 |  29960936 |          4.89 |         26 |         22 |        21 | fine
+ Adventure     |    966 |      7.23 | 128252250 |          4.85 |         21 |          9 |        22 | fine
+ Horror        |    190 |      6.93 |  32054042 |          4.79 |         35 |         20 |        23 | fine
+ Super Power   |    339 |      7.27 |  67336759 |          4.73 |         18 |         13 |        24 | fine
+ Shounen Ai    |     55 |      7.07 |   3277394 |          4.71 |         33 |         39 |        25 | fine
+ Game          |    138 |      7.10 |  25138839 |          4.71 |         30 |         26 |        25 | fine
+ Romance       |   1114 |      7.17 | 166443360 |          4.70 |         25 |          5 |        27 | fine
+ Sports        |    251 |      7.39 |  21704360 |          4.69 |          7 |         27 |        28 | fine
+ School        |    969 |      7.18 | 157799077 |          4.65 |         24 |          8 |        29 | fine
+ Mystery       |    423 |      7.47 |  79659847 |          4.63 |          4 |         12 |        30 | fine
+ Shounen       |   1085 |      7.38 | 169557112 |          4.63 |         10 |          4 |        30 | fine
+ Hentai        |    138 |      6.91 |   2664296 |          4.59 |         37 |         40 |        32 | fine
+ Dementia      |     39 |      6.87 |   6872272 |          4.41 |         39 |         35 |        33 | fine
+ Parody        |    172 |      7.29 |  20588258 |          4.41 |         16 |         28 |        33 | fine
+ Kids          |     89 |      7.01 |   4850312 |          4.38 |         34 |         37 |        35 | fine
+ Supernatural  |    849 |      7.29 | 159659281 |          4.37 |         16 |          7 |        36 | fine
+ Psychological |    227 |      7.39 |  54292295 |          4.21 |          7 |         17 |        37 | fine
+ Drama         |   1161 |      7.39 | 171228525 |          4.15 |          7 |          3 |        38 | fine
+ Thriller      |     83 |      7.58 |  25873626 |          3.72 |          1 |         25 |        39 | fine
+ Military      |    282 |      7.38 |  35427167 |          3.67 |         10 |         19 |        40 | fine
+(40 rows)
+
+
+                           question
+---------------------------------------------------------------
+ Q7. Does the number of episodes change whether people finish?
+(1 row)
+
+
+    length_bucket     | titles | avg_score | drop_rate_pct | still_watching_pct | favorite_pct
+----------------------+--------+-----------+---------------+--------------------+--------------
+ 01. 1-13 (one cour)  |   1611 |      6.98 |          5.82 |               6.75 |         1.00
+ 02. 14-26 (two cour) |    571 |      7.45 |          5.55 |               7.54 |         2.10
+ 03. 27-52 (year)     |    201 |      7.41 |          6.39 |               6.54 |         2.55
+ 04. 53-100           |     52 |      7.51 |          6.76 |               7.74 |         3.61
+ 05. 100+             |     56 |      7.66 |         10.78 |              14.37 |         3.64
+(5 rows)
+
+
+           question
+------------------------------
+ Q8. Sequels vs first seasons
+(1 row)
+
+
+           kind            | titles | avg_score | avg_members | drop_rate_pct | favorite_pct
+---------------------------+--------+-----------+-------------+---------------+--------------
+ sequel                    |    147 |      7.67 |      255570 |          2.18 |         1.34
+ first season / standalone |   2355 |      7.12 |      175078 |          6.46 |         1.59
+(2 rows)
+
+
+               question
+--------------------------------------
+ Check to verify few Sequels Manually
+(1 row)
+
+
+                                         name
+---------------------------------------------------------------------------------------
+ 100-man no Inochi no Ue ni Ore wa Tatteiru 2nd Season
+ Ganbare! Lulu Lolo 2nd Season
+ Owarimonogatari 2nd Season Recaps
+ Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III
+ Channel 5.5 3rd Season
+ Lupin III: Part III
+ Gurazeni Season 2
+ Mushi Mushi Mura no Nakama-tachi: Minna Ii Toko Arun Da yo
+ Lupin III: Ai no Da Capo - Fujiko's Unlucky Days
+ Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen 3rd Season
+ Ajin Part 2: Shoutotsu
+ Baolie Feiche II: Xing Neng Juexing
+ Tenchi Muyou! Ryououki 4th Season
+ Baby Steps 2nd Season
+ Lupin III: Moeyo Zantetsuken!
+ Soukyuu no Fafner: Dead Aggressor - Exodus 2nd Season
+ Chain Chronicle: Haecceitas no Hikari Part 1
+ Major 2nd (TV)
+ Toaru Majutsu no Index III
+ Lupin III vs. Detective Conan: The Movie
+(20 rows)
+
+
+                  question
+--------------------------------------------
+ Q9. Which studios are the most consistent?
+(1 row)
+
+
+   studio_name    | titles | avg_score | score_stddev | worst | best | median_score
+------------------+--------+-----------+--------------+-------+------+--------------
+ AIC              |     28 |      7.07 |         0.37 |  6.31 | 7.66 |         7.10
+ Group TAC        |     16 |      7.18 |         0.42 |  6.58 | 8.02 |         7.09
+ Kyoto Animation  |     28 |      7.83 |         0.46 |  6.89 | 8.96 |         7.81
+ Xebec            |     53 |      7.02 |         0.47 |  5.89 | 7.78 |         7.11
+ DiomedΘa         |     30 |      6.89 |         0.47 |  5.53 | 7.56 |         6.90
+ Doga Kobo        |     42 |      7.16 |         0.49 |  5.86 | 8.04 |         7.25
+ OLM              |     44 |      6.89 |         0.50 |  5.58 | 8.49 |         6.79
+ Toei Animation   |     88 |      7.38 |         0.50 |  6.28 | 8.53 |         7.45
+ Arms             |     20 |      6.66 |         0.50 |  5.81 | 7.77 |         6.73
+ Manglobe         |     16 |      7.50 |         0.50 |  6.74 | 8.50 |         7.47
+ Studio Comet     |     15 |      7.34 |         0.52 |  6.51 | 8.29 |         7.27
+ LIDENFILMS       |     33 |      6.90 |         0.54 |  5.54 | 7.76 |         6.75
+ Studio Gokumi    |     21 |      7.00 |         0.55 |  5.52 | 7.67 |         7.08
+ Bee Train        |     16 |      7.09 |         0.56 |  5.91 | 8.01 |         7.07
+ Nippon Animation |     18 |      7.54 |         0.56 |  6.28 | 8.42 |         7.66
+(15 rows)
+
+
+                               question
+----------------------------------------------------------------------
+ Q10. Backlog kings: shows everyone plans to watch but hasn't started
+(1 row)
+
+
+ type  | rnk |                           name                           | year | score | members | plan_to_watch | backlog_pct
+-------+-----+----------------------------------------------------------+------+-------+---------+---------------+-------------
+ Movie |   1 | FLCL Progressive                                         | 2018 |  6.42 |  104151 |         62797 |        60.3
+ Movie |   2 | Kono Sekai no Katasumi ni                                | 2016 |  8.24 |  122142 |         56182 |        46.0
+ Movie |   3 | Sayonara no Asa ni Yakusoku no Hana wo Kazarou           | 2018 |  8.45 |  244902 |        108387 |        44.3  42.3
+ Movie |   5 | Kumo no Mukou, Yakusoku no Basho                         | 2004 |  7.56 |  177428 |         71621 |        40.4
+ Movie |   6 | Colorful (Movie)                                         | 2010 |  7.83 |  144435 |         58008 |        40.2
+ Movie |   7 | Sennen Joyuu                                             | 2002 |  8.27 |  127210 |         50689 |        39.8
+ Movie |   8 | Fate/stay night Movie: Heaven's Feel - I. Presage Flower | 2017 |  8.26 |  265041 |        101540 |        38.3
+ TV    |   1 | Texhnolyze                                               | 2003 |  7.76 |  182599 |        105805 |        57.9
+ TV    |   2 | Kaiba                                                    | 2008 |  8.17 |  113817 |         62050 |        54.5
+ TV    |   3 | Bokura no                                                | 2007 |  7.66 |  149892 |         81551 |        54.4
+ TV    |   4 | Mononoke                                                 | 2007 |  8.42 |  215972 |        116527 |        54.0
+ TV    |   5 | Ima, Soko ni Iru Boku                                    | 1999 |  7.66 |  108100 |         58222 |        53.9
+ TV    |   6 | Gankutsuou                                               | 2004 |  8.17 |  193810 |        100288 |        51.7
+ TV    |   7 | Yozakura Quartet                                         | 2008 |  6.84 |  119643 |         61393 |        51.3
+ TV    |   8 | Dennou Coil                                              | 2007 |  8.09 |  121554 |         62355 |        51.3
+(16 rows)

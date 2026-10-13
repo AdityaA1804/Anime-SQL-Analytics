@@ -1,0 +1,12 @@
+                            check_name                             | bad_rows
+-------------------------------------------------------------------+----------
+ rows lost between raw and anime                                   |        0
+ score outside 1-10                                                |        0
+ aired text present but from-date did not parse                    |        0
+ aired_to before aired_from  (expected: 6, reversed in the source) |        6
+ status counts add up to more than members                         |        0
+ duplicate names  (expected: 3, different MAL ids with same title) |        3
+ duration text present but minutes did not parse                   |        0
+ titles with genres in csv but no rows in anime_genre              |        0
+ score_dist titles without exactly 10 rows                         |        0
+(9 rows)
